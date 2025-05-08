@@ -1,0 +1,35 @@
+# Node.js / npm
+node_modules/
+package-lock.json
+npm-debug.log
+*.log
+
+# Entorno de desarrollo
+.env
+.DS_Store
+.thumbs.db
+
+# Preprocesadores
+.sass-cache/
+src/scss/*.css
+
+# Editors/IDEs
+.vscode/
+.idea/
+*.swp
+
+# Build outputs
+dist/
+build/
+public/assets/css/
+
+# Archivos temporales/sistema
+*.tmp
+*.bak
+*.zip
+*.tar
+*.mp4
+*.avi
+
+# Excepciones específicas
+Clase/
