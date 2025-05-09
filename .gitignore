@@ -21,7 +21,7 @@ src/scss/
 # Build outputs
 dist/
 build/
-public/assets/css/
+
 
 # Archivos temporales/sistema
 *.tmp
