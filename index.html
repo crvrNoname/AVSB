@@ -24,17 +24,42 @@
 
    
     <header>
-        <h1>Andres Valencia SB</h1>
-         <a href="#" >
-            <img 
+        <!-- <h1>
+            <a href="#" >
+                <img 
                 src="./public/assets/images/logos/logoAVSB2025svg.svg" 
                 title="Logo Andres Valencia SB" atl="Logo Andres Valencia SB" class="logo-link"
                 class="logo" 
                 width="200"  
-            >            
-        </a>
-     
+                >            
+            </a>
+        </h1> -->
+            
+        <!-- NavBar -->
+         <nav class="navbar">
+            <!-- Logo -->
+            <a href="index.html" class="navbar__logo">
+                <img src="./public/assets/images/logos/logoAVSB2025svg.svg" alt="Logo Andres Valencia SB" width="180">
+            </a>
+
+            <!-- Menú Desktop -->
+            <ul class="navbar__menu">
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="agendar.html">Agendar</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+            </ul>
+
+            <!-- Menú Móvil (Hamburguesa) -->
+            <div class="navbar__hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
     </header>
+    <!-- Barra de Navegacion -->
     <main>
         <h2>Informacion principal</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti voluptate magnam voluptates non eveniet reiciendis quas blanditiis assumenda laudantium tempore ad aspernatur facere, asperiores et voluptatum incidunt ullam beatae alias!</p>
@@ -48,5 +73,7 @@
 
      <a href="https://api.whatsapp.com/send?phone=56988934851&text=HOLA!" target="_blank">
         <img class="logoWhatsapp pulse" src="./public/assets/images/logos/avsbWsp.png" alt="logo WhatsaPP">
+<!-- NavBar -->
+        <script src="./src/js/navbar.js"></script>
 </body>
 </html>
