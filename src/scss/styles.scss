@@ -1,10 +1,11 @@
 // Importa todos los partials
 @import 'variables';
-@import 'base';
+@import 'general';
 @import 'layout';
 @import 'components';
-@import 'navbar';
+@import 'mixin';
 
+@import 'navbar';
 
 @import 'header';
 @import 'main';

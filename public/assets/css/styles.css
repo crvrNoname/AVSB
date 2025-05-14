@@ -12,6 +12,7 @@ html body {
   background-color: #fff;
 }
 
+/*General - Boton Whatsapp*/
 .logoWhatsapp {
   width: 60px;
   position: fixed;
@@ -37,9 +38,11 @@ html body {
   transition: transform 0.3s;
 }
 
+/*General - Boton Whatsapp - fin*/
+/*NavBar*/
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   padding: 1rem 2rem;
   background-color: #fff;
@@ -118,32 +121,30 @@ html body {
   }
 }
 
-header {
-  background-color: lightskyblue;
-}
-header h1 {
-  color: #576782;
-  text-align: center;
-}
-
+/*Main*/
 .hero {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 80vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/hero-bg.jpg");
+  background: #ffffff;
   background-size: cover;
-  color: #fff;
+  color: #333;
   text-align: center;
 }
 .hero__content {
+  width: auto;
   max-width: 800px;
+  height: auto;
   padding: 2rem;
+}
+.hero h1 {
+  margin: unset;
 }
 
 .featured-services {
   padding: 4rem 2rem;
-  background: #fff;
+  background: #ffffff;
 }
 .featured-services h2 {
   text-align: center;
@@ -157,10 +158,12 @@ header h1 {
 }
 
 .service-card {
-  border: 1px solid #eee;
+  border: 1px solid #576782;
   border-radius: 8px;
   overflow: hidden;
   transition: transform 0.3s;
+  background: linear-gradient(to bottom, #576782, #ffffff);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 .service-card:hover {
   transform: translateY(-5px);
@@ -172,8 +175,8 @@ header h1 {
   align-items: center;
   flex-direction: column;
   padding: 4rem 2rem;
-  background: #34A853;
-  color: #fff;
+  background: #576782;
+  color: #ffffff;
 }
 
 /*Floating-Bar*/
@@ -243,7 +246,7 @@ header h1 {
     height: 20px;
   }
   .floating-bar__item.active {
-    background: #4285F4;
+    background: #576782;
   }
   .floating-bar__item.active img {
     filter: brightness(0) invert(1);
@@ -264,7 +267,7 @@ html {
 
 .footer {
   background: #333;
-  color: #fff;
+  color: #ffffff;
   padding: 2rem;
 }
 .footer__content {
@@ -281,7 +284,7 @@ html {
 /* RESPONSIVE @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 @media (max-width: 768px) {
   .contenedor {
-    background-color: rgb(234, 235, 231);
+    background-color: #A0A4AC;
     font-size: 0.6em;
     display: grid;
     grid-template-columns: 1fr;
@@ -347,7 +350,7 @@ html {
     grid-template-areas: "header header header" "nav nav nav" "aside main main" "aside main main" "footer footer footer";
   }
   aside {
-    width: 15vw;
+    width: auto;
     height: fit-content;
   }
 }
