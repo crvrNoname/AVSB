@@ -63,8 +63,9 @@
         border-radius: 50px; // Más ovalado
 
         &__item {
-            width: 40px;
-            height: 40px;
+            width: 30px;
+            height: 30px;
+           
             img { width: 20px; height: 20px; }
         }
         // En el media query de móvil

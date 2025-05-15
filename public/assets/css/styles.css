@@ -240,8 +240,8 @@ html body {
     border-radius: 50px;
   }
   .floating-bar__item {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
   }
   .floating-bar__item img {
     width: 20px;
