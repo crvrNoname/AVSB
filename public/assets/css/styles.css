@@ -95,7 +95,7 @@ html body {
 }
 @media (max-width: 768px) {
   .navbar__logo img {
-    max-width: 50%;
+    max-width: 30%;
   }
   .navbar__menu {
     position: fixed;
