@@ -9,10 +9,25 @@
         flex-wrap: wrap;
         justify-content: space-between;
         gap: 2rem;
+        // img{
+        //      max-width:10%;
+        // }
     }
+      &__logo {
+    width: 120px;
+    height: auto;
+  }
 
     &__nav ul {
         list-style: none;
         padding: 0;
+    }
+ .footer__icon {
+    img{
+
+        width: 20%;
+        height: 20%;
+        transition: transform 0.3s;
+    }
     }
 }

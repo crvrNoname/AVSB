@@ -96,6 +96,7 @@ html body {
 @media (max-width: 768px) {
   .navbar__logo img {
     max-width: 30%;
+    max-height: auto;
   }
   .navbar__menu {
     position: fixed;
@@ -129,7 +130,8 @@ html body {
 /*Main*/
 .hero {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
   min-height: 80vh;
   background: #ffffff;
@@ -176,7 +178,8 @@ html body {
 
 .cta {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
   padding: 4rem 2rem;
@@ -281,9 +284,18 @@ html {
   justify-content: space-between;
   gap: 2rem;
 }
+.footer__logo {
+  width: 120px;
+  height: auto;
+}
 .footer__nav ul {
   list-style: none;
   padding: 0;
+}
+.footer .footer__icon img {
+  width: 20%;
+  height: 20%;
+  transition: transform 0.3s;
 }
 
 /*# sourceMappingURL=styles.css.map */
