@@ -230,7 +230,7 @@ html body {
 @media (max-width: 768px) {
   .floating-bar {
     flex-direction: row;
-    bottom: 3%;
+    bottom: 5%;
     left: 50%;
     transform: translateX(-50%);
     width: 90%;

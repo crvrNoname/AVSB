@@ -53,7 +53,7 @@
     // Móvil: Barra horizontal abajo
     @media (max-width: 768px) {
         flex-direction: row; // Cambia a horizontal
-        bottom: 3%;
+        bottom: 5%;
         left: 50%;
         transform: translateX(-50%);
         width: 90%;
