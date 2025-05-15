@@ -53,11 +53,11 @@
     // Móvil: Barra horizontal abajo
     @media (max-width: 768px) {
         flex-direction: row; // Cambia a horizontal
-        bottom: 10px;
+        bottom: 3%;
         left: 50%;
         transform: translateX(-50%);
         width: 90%;
-        max-width: 300px;
+        max-width: 200px;
         justify-content: space-around;
         padding: 10px 15px;
         border-radius: 50px; // Más ovalado
