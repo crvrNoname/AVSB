@@ -1,0 +1,90 @@
+/*Floating-Bar*/
+
+.floating-bar {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column; // Vertical por defecto (desktop)
+    gap: 12px;
+    background: rgba(255,255,255,0.95);
+    padding: 15px;
+    border-radius: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    backdrop-filter: blur(8px);
+
+    // Estilos comunes de ítems
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        transition: all 0.3s;
+        
+        &:hover {
+            transform: scale(1.1);
+            background: #f8f9fa;
+        }
+
+        img {
+            width: 24px;
+            height: 24px;
+        }
+
+        span {
+            display: none;
+            margin-left: 8px;
+            font-size: 0.9rem;
+        }
+    }
+
+    // Desktop: Texto visible al hover
+    @media (min-width: 769px) {
+        &__item:hover {
+            width: auto;
+            padding: 0 15px;
+            span { display: inline-block; }
+        }
+    }
+
+    // Móvil: Barra horizontal abajo
+    @media (max-width: 768px) {
+        flex-direction: row; // Cambia a horizontal
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        max-width: 300px;
+        justify-content: space-around;
+        padding: 10px 15px;
+        border-radius: 50px; // Más ovalado
+
+        &__item {
+            width: 40px;
+            height: 40px;
+            img { width: 20px; height: 20px; }
+        }
+        // En el media query de móvil
+&__item.active {
+    background: $primary-color;
+    img { filter: brightness(0) invert(1); }
+}
+    }
+}
+
+// Para el scroll suave con offset
+html {
+    scroll-padding-top: 80px; // Ajusta según tu navbar
+}
+
+// Estilo "active" coherente
+.floating-bar__item.active {
+    background: #4285F4;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    img {
+        filter: brightness(0) invert(1);
+    }
+}

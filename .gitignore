@@ -11,7 +11,7 @@ npm-debug.log
 
 # Preprocesadores
 .sass-cache/
-src/scss/
+
 
 # Editors/IDEs
 .vscode/
