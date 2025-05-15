@@ -210,8 +210,8 @@ html body {
   background: #f8f9fa;
 }
 .floating-bar__item img {
-  width: 24px;
-  height: 24px;
+  width: 35px;
+  height: 35px;
 }
 .floating-bar__item span {
   display: none;
@@ -244,8 +244,8 @@ html body {
     height: 30px;
   }
   .floating-bar__item img {
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 35px;
   }
   .floating-bar__item.active {
     background: #576782;
