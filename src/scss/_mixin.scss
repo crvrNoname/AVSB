@@ -6,3 +6,14 @@
     justify-content: flex-start;
     align-items: center;
 }
+
+
+// Mixin para íconos SVG
+@mixin icon-svg($name) {
+  background-image: url('../assets/icons/#{$name}.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}

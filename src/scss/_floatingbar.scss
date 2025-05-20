@@ -41,39 +41,9 @@
         }
     }
 
-    // Desktop: Texto visible al hover
-    @media (min-width: 769px) {
-        &__item:hover {
-            width: auto;
-            padding: 0 15px;
-            span { display: inline-block; }
-        }
-    }
 
-    // Móvil: Barra horizontal abajo
-    @media (max-width: 768px) {
-        flex-direction: row; // Cambia a horizontal
-        bottom: 7%;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 90%;
-        max-width: 200px;
-        justify-content: space-around;
-        padding: 10px 15px;
-        border-radius: 50px; // Más ovalado
 
-        &__item {
-            width: 30px;
-            height: 30px;
-           
-            img { width: 40px; height: 35px; }
-        }
-        // En el media query de móvil
-&__item.active {
-    background: $primary-color;
-    img { filter: brightness(0) invert(1); }
-}
-    }
+
 }
 
 // Para el scroll suave con offset
