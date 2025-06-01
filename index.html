@@ -22,45 +22,41 @@
 
    
     <header>
-          <!-- Logo -->
-          <h1>
-
-              <a href="#" class="navbar__logo">
+   
                   
-                <img class="logo" src="./public/assets/images/logos/logoSolo-svgZip.svg" alt="Logo Andres Valencia Salon de Belleza" >                 
-                <img class="logoFull" src="./public/assets/images/logos/logoAVSB2025zip_sinMesa.svg" alt="Logo Andres Valencia Salon de Belleza" >                 
-                  
-                </a>
-            </h1>  
-              
+        
         <!-- NavBar -->
-         <nav class="navbar">
-          
-            <!-- Menú Desktop -->
-            <ul class="navbar__menu">
-                <li><a href="index.html" class="active">Inicio</a></li>
-                <li><a href="galeria.html">Galería</a></li>
-                <li><a href="eventos.html">Eventos</a></li>
-                <li><a href="agendar.html">Agendar</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-            </ul>
+        <nav class="navbar">
+            <div class="navbar__logo">
+               <a class="link__logo" href="#">
 
-            <!-- Menú Móvil (Hamburguesa) -->
-            <div class="navbar__hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+                   <img class="logo" src="./public/assets/images/logos/logoSolo-svgZip.svg" alt="Logo Andres Valencia Salon de Belleza">                 
+                   <img class="logoFull" src="./public/assets/images/logos/logoAVSB2025zip_sinMesa.svg" alt="Logo Andres Valencia Salon de Belleza" >                 
+                </a> 
+                </div>
+                
+            <button class="navbar__toggle" id="toggle-menu">
+                ☰
+            </button>
+            
+            <ul class="navbar__menu" id="navbar-menu">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#eventos">Eventos</a></li>
+                <li><a href="#agendar">Agendar</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+            </ul>
         </nav>
+        <!-- Fin NavBar -->
     </header>
-    <!-- Barra de Navegacion -->
+ 
     <main>
         <!-- Hero Banner (portada) -->
         <section class="hero" aria-label="Portada principal">
             <div class="hero__content">
                 <!-- <h1><img src="./public/assets/images/logos/logoAVSB2025zip_sinMesa.svg" alt="Logo Andres Valencia Salon de Belleza"></h1> -->
                 <p>Descubre nuestros servicios y eventos exclusivos</p>
-                <a href="tomaDeHora.html" class="button">Reservá Tú Hora Aquí</a>
+                <a href="./src/pages/formulario.html" target="_blank" class="button">Reservá Tú Hora Aquí</a>
             </div>
         </section>
 
@@ -88,7 +84,7 @@
         <!-- Sección Call-to-Action -->
         <section class="cta" aria-label="Llamado a la acción">
             <h2>¿Listo para agendar?</h2>
-            <a href="agendar.html" class="button button--large">Reserva ahora</a>
+            <a href="./src/pages/formulario.html" target="_blank" class="button button--large">Reserva ahora</a>
         </section>
     </main>
 
@@ -113,27 +109,64 @@
     </a> -->
 </aside>
     <!-- ===== FOOTER ===== -->
-    <footer class="footer" aria-label="Pie de página">
-        <div class="footer__content">
+<footer>
+  <div class="footer-container">
+    <div class="footer-section">
+      <h4>Sobre Nosotros</h4>
+      <img src="./public/assets/images/logos/logoSolo-svgZip.svg" alt="Logo de la empresa" class="footer-logo" />
+      <p>En nuestro salón de belleza, fusionamos estilo y cuidado para resaltar lo mejor de ti. Nos especializamos en brindar experiencias únicas de belleza, bienestar y confianza con un equipo profesional y apasionado por tu transformación.</p>
+    </div>
+
+    <div class="footer-section">
+      <h4>Enlaces Rápidos</h4>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h4>Redes Sociales</h4>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/people/Andr%C3%A9s-Valencia-SB/100030756203901/?rdid=QRo0os9OygvRpReD&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1E8NumJ8en%2F" target="_blank"><img src="./public/assets/images/logos/float/fb-svgZip.svg" alt="Facebook Andres Valencia SB" /></a>
+        <!-- <a href="#"><img src="assets/images/twitter.png" alt="Twitter" /></a> -->
+        <a href="https://www.instagram.com/sbandresvalencia/?igsh=MnFyNm1mejR5NXQw#" target="_blank"><img src="./public/assets/images/logos/float/insta-bgr-svgZip.svg" alt="Instagram Andres Valencia SB" /></a>
+        <!-- <a href="#"><img src="assets/images/linkedin.png" alt="LinkedIn" /></a> -->
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    &copy; 2025 Andres Valencia Salon de Belleza. Todos los derechos reservados.
+  </div>
+</footer>
+
+
+
+
+    <!-- <footer class="footer" aria-label="Pie de página"> -->
+        <!-- <div class="footer__content"> -->
             <!-- Logo footer -->
-            <img class="footer__logo" src="./public/assets/images/logos/logoSolo-svgZip.svg" alt="AVSB Logo">
+            <!-- <img class="footer__logo" src="./public/assets/images/logos/logoSolo-svgZip.svg" alt="AVSB Logo"> -->
 
             <!-- Enlaces rápidos -->
-            <nav class="footer__nav" aria-label="Enlaces secundarios">
-                <ul>
-                    <li><a href="politica-privacidad.html">Política de privacidad</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
+            <!-- <nav class="footer__nav" aria-label="Enlaces secundarios"> -->
+                <!-- <ul> -->
+                    <!-- <li><a href="politica-privacidad.html">Política de privacidad</a></li> -->
+                    <!-- <li><a href="contacto.html">Contacto</a></li> -->
+                <!-- </ul> -->
+            <!-- </nav> -->
 
             <!-- Redes sociales -->
-            <div class="footer__social">
-                <a href="#"><img class="footer__icon" src="./public/assets/images/logos/float/fb-svgZip.svg" alt="Facebook" width="24"></a>
-                <a href="#"><img class="footer__icon" src="./public/assets/images/logos/float/insta-bgr-svgZip.svg" alt="Instagram" width="24"></a>
-            </div>
-        </div>
-        <p class="footer__copyright">© 2024 AVSB. Todos los derechos reservados.</p>
-    </footer>
+            <!-- <div class="footer__social"> -->
+                <!-- <a href="#"><img class="footer__icon" src="./public/assets/images/logos/float/fb-svgZip.svg" alt="Facebook" width="24"></a> -->
+                <!-- <a href="#"><img class="footer__icon" src="./public/assets/images/logos/float/insta-bgr-svgZip.svg" alt="Instagram" width="24"></a> -->
+            <!-- </div> -->
+        <!-- </div> -->
+        <!-- <p class="footer__copyright">© 2024 AVSB. Todos los derechos reservados.</p> -->
+    <!-- </footer> -->
 
      
 <!-- Boton Whatsapp -->

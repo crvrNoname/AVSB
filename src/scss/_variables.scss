@@ -9,6 +9,7 @@ $text-color: #333;
 //Colors
 $primary-color:  #576782;
 $secondary-color:  #A0A4AC; 
+$hover-color:lighten($secondary-color, 10%);
 $success-color: #6BAF7C; 
 $error-color: #D26A6A; 
 $white: #ffffff;

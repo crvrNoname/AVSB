@@ -1,14 +1,17 @@
 //Header
 
-header{
+.navbar{
     @include flex-center;
-    h1{
-     @include flex-center;
-     margin: 0;
-        a{
+    // h1{
+    //  @include flex-center;
+    //  margin: 0;
+        .navbar__logo{
           @include flex-center;
-            
+          margin: 0;  
 // 
+.link__logo{
+  @include flex-center;
+}
 
 .logoFull{
          height: auto;
@@ -28,6 +31,6 @@ header{
 
 
 
-        }
+        // }
     }
 }
