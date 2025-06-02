@@ -3,7 +3,7 @@
 // Estilos semánticos
 .hero {
     @include flex-center;
-    min-height: 80vh;
+    min-height: 50vh;
     background: $white;
     background-size: cover;
     color: $text-color;
@@ -36,6 +36,16 @@
 }
 
 .service-card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    cursor: pointer;
+    overflow: hidden;
+    width: 100%;
+      max-width: 35rem;
+  min-height: 4.5rem;
+  margin: 0 auto;
+
     border: 1px solid $primary-color;
     border-radius: 8px;
     overflow: hidden;

@@ -2,6 +2,7 @@
 /*GENERAL @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 * {
   padding: 0;
+  border: 1px solid red;
   box-sizing: border-box;
 }
 
@@ -243,7 +244,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  min-height: 80vh;
+  min-height: 50vh;
   background: #ffffff;
   background-size: cover;
   color: #333;
@@ -275,6 +276,15 @@ body {
 }
 
 .service-card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  cursor: pointer;
+  overflow: hidden;
+  width: 100%;
+  max-width: 35rem;
+  min-height: 4.5rem;
+  margin: 0 auto;
   border: 1px solid #576782;
   border-radius: 8px;
   overflow: hidden;
