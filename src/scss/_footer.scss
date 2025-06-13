@@ -9,11 +9,16 @@ $color-muted: #aaa;
 footer {
   background-color: $color-bg;
   color: $color-text;
+       width: 100%;
+  max-width: 55rem;
   padding: 40px 20px;
+    margin: 0 auto;
+      box-shadow: 15px 20px 40px #576782;
+        border-radius: 0.5rem;
 
   .footer-container {
     max-width: 1200px;
-    margin: auto;
+    // margin: auto;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;

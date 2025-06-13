@@ -35,19 +35,51 @@
     }
   }  
 
-  .navbar {
+  // .navbar {
 
     @media (max-width: 768px) {
+
+      .contenedor {
+    
+    // background-color: $secondary-color;
+    font-size: 0.6em;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: 
+      "header"
+      "nav"
+      // "aside"
+      "main"
+      "main"
+      "footer";
+  }
+
       .logoFull{
         display:none;
       }
      
   }
     @media (min-width: 768px) {
+      .contenedor {
+        // background-color: blueviolet;
+          display: grid;
+    grid-template-columns: 9fr;//3fr 3fr 3fr;
+    grid-template-rows: auto auto auto;// auto auto;
+    grid-template-areas: 
+      "header"
+      // "nav nav nav"
+      "main "
+      // "main main main"
+      // "aside main main"
+      // "aside main main"
+      "footer ";
+      }
       .logo{
         display:none;
       }
+
       
 
   }
-}
+// }

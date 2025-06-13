@@ -1,19 +1,22 @@
 // Importa todos los partials
 @import 'variables';
+@import 'font';
+@import 'mixin';
 @import 'general';
+@import 'font';
+@import 'header';
+@import 'navbar';
+@import 'main';
+@import 'footer';
+@import 'floatingbar';
+@import 'responsive';
+
 // @import 'layout';
 // @import 'components';
-@import 'mixin';
 
-@import 'header';
 
-@import 'navbar';
-@import 'formulario';
+// @import 'formulario';
 
-@import 'main';
-@import 'floatingbar';
-@import 'footer';
 
-@import 'responsive';
 
 
