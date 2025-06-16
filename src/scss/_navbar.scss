@@ -7,6 +7,11 @@ $breakpoint: 768px;
   justify-content: space-between;
   align-items: center;
 
+  
+
+
+  
+
   position: relative;
 
   &__logo {
@@ -14,15 +19,39 @@ $breakpoint: 768px;
     font-size: 1.5rem;
     font-weight: bold;
   }
+  
+    &__toggle-container {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 0.2rem;
+        cursor: pointer;
+        width: auto;
+        margin: 0px;
 
+    }
+
+ 
   &__toggle {
     display: none;
     background: none;
     border: none;
     color: $primary-color;
     font-size: 1.8rem;
+   
     cursor: pointer;
   }
+
+     &__toggle-text {
+        font-weight: 600;
+        font-size: 1rem;
+        display: none; // Oculto en desktop por defecto
+
+        @media (max-width: 768px) {
+            display: block; // Visible solo en móvil
+           
+        }
+    }
 
   &__menu {
     list-style: none;
@@ -45,7 +74,12 @@ $breakpoint: 768px;
 
   @media (max-width: $breakpoint) {
     &__toggle {
-      display: block;
+      display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+       width: fit-content;
+      //  background-color: greenyellow;
+       margin: 1%;
     }
 
     &__menu {

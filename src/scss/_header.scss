@@ -20,11 +20,20 @@ header {
     //  @include flex-center;
     //  margin: 0;
         .navbar__logo{
-          @include flex-center;
+          // @include flex-center;
           margin: 0;  
+          // background-color: rebeccapurple;
+          // width: auto;
+          // contain: content;
 // 
 .link__logo{
-  @include flex-center;
+  // @include flex-center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width:  fit-content;
+  height:  auto;
+  // background-color: rebeccapurple;
 }
 
 .logoFull{
@@ -36,9 +45,9 @@ header {
       }
 
        .logo{
-         width: 80%;
+         width: 60%;
     max-width: 7rem;
-    margin: 0px auto;
+    margin: 0px;
     padding: 0px;
     // display: block;
   
