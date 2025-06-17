@@ -332,6 +332,7 @@ footer .footer-section .footer-logo {
 }
 footer .social-icons {
   display: flex;
+  flex-direction: row;
   align-items: center;
 }
 footer .social-icons a {
@@ -573,7 +574,7 @@ body {
   justify-content: center;
   gap: 10px;
   width: 100%;
-  background: #25D366;
+  background: #A0A4AC;
   color: white;
   padding: 15px;
   border: none;
@@ -583,8 +584,13 @@ body {
   transition: background 0.3s;
   font-size: 16px;
 }
+.submit-btn img.icon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
 .submit-btn:hover {
-  background: #1DA851;
+  background: #bbbec4;
 }
 
 img.icon {
