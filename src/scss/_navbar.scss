@@ -45,10 +45,12 @@ $breakpoint: 768px;
      &__toggle-text {
         font-weight: 600;
         font-size: 1rem;
+        
         display: none; // Oculto en desktop por defecto
 
         @media (max-width: 768px) {
             display: block; // Visible solo en móvil
+            margin-right: 5px;
            
         }
     }

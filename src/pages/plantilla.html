@@ -53,88 +53,24 @@
         <!-- Fin NavBar -->
     </header>
  
-    <!-- <main> -->
-      <div class="form-container">
-    <h1>
-      <img class="icon" src="../../public/assets/images/iconFormulario/calendar-check-solid.svg" alt="Reserva" />
-      Reserva tu cita
-    </h1>
+    <main>
+        <!-- Hero Banner (portada) -->
+        <section class="hero" aria-label="Portada principal">
+            
+        </section>
 
-    <form id="reservaForm">
-      <!-- Servicio -->
-      <div class="form-group">
-        <label for="servicio">
-          <img class="icon" src="../../public/assets/images/iconFormulario/scissors-solid.svg" alt="Servicio" />
-          Servicio:
-        </label>
-        <select id="servicio" required>
-          <option value="" disabled selected>Selecciona un servicio</option>
-          <option value="corte">Corte de pelo</option>
-          <option value="color">Coloración</option>
-          <option value="manicura">Manicura</option>
-          <option value="tratamiento">Tratamiento facial</option>
-        </select>
-      </div>
+        <!-- Sección Servicios Destacados -->
+        <section class="featured-services" aria-label="Servicios destacados">
+            
+        </section>
 
-      <!-- Profesional -->
-      <div class="form-group">
-        <label for="profesional">
-          <img class="icon" src="../../public/assets/images/iconFormulario/user-tie-solid.svg" alt="Profesional" />
-          Profesional:
-        </label>
-        <select id="profesional" required>
-          <option value="" disabled selected>Selecciona un profesional</option>
-          <option value="maria">María González</option>
-          <option value="juan">Juan Pérez</option>
-          <option value="lucia">Lucía Martínez</option>
-        </select>
-      </div>
+        <!-- Sección Call-to-Action -->
+        <section class="cta" aria-label="Llamado a la acción">
+             </section>
+    </main>
+    <aside>
 
-      <!-- Fecha -->
-      <div class="form-group">
-        <label for="fecha">
-          <img class="icon" src="../../public/assets/images/iconFormulario/calendar-days-solid.svg" alt="Fecha" />
-          Fecha:
-        </label>
-        <input type="date" id="fecha" required>
-      </div>
-
-      <!-- Hora -->
-      <div class="form-group">
-        <label for="hora">
-          <img class="icon" src="../../public/assets/images/iconFormulario/clock-regular.svg" alt="Hora" />
-          Hora:
-        </label>
-        <input type="time" id="hora" min="09:00" max="18:00" required>
-      </div>
-
-      <!-- Nombre -->
-      <div class="form-group">
-        <label for="nombre">
-          <img class="icon" src="../../public/assets/images/iconFormulario/user-solid.svg" alt="Nombre" />
-          Nombre completo:
-        </label>
-        <input type="text" id="nombre" placeholder="Ej: Ana López" required>
-      </div>
-
-      <!-- Teléfono -->
-      <div class="form-group">
-        <label for="telefono">
-          <img class="icon" src="../../public/assets/images/iconFormulario/phone-solid.svg" alt="Teléfono" />
-          Teléfono:
-        </label>
-        <input type="tel" id="telefono" placeholder="Ej: +56 9 1234 5678" required>
-      </div>
-
-      <!-- Botón -->
-      <button type="submit" class="submit-btn">
-        <img class="icon" src="../../public/assets/images/logos/float/wsp-svgZip.svg" alt="WhatsApp" />
-        Reservar por WhatsApp
-      </button>
-    </form>
-  </div>
-    <!-- </main> -->
- 
+    </aside>
 
     <aside class="floating-bar">
     <!-- <a href="https://www.instagram.com/sbandresvalencia?igsh=MnFyNm1mejR5NXQw" class="floating-bar__item" aria-label="Contacto">
@@ -223,9 +159,8 @@
         </a> -->
 
 <!-- Scripts -->
-        <script src="../src/js/modules/navbar.js"></script>
-        <script src="../src/js/modules/animation.js"></script>
-        <script src="../src/js/modules/floatingbar.js"></script>
-        <script src="../sec/js/modules/formularioWSP.js"></script>
+        <script src="./src/js/modules/navbar.js"></script>
+        <script src="./src/js/modules/animation.js"></script>
+        <script src="./src/js/modules/floatingbar.js"></script>
 </body>
 </html>
