@@ -440,11 +440,6 @@ html {
 }
 
 /*GALERIA CSS @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
-article {
-  background-color: #576782;
-  border-radius: 1rem;
-}
-
 .contenedorFotos {
   width: fit-content;
   display: flex;
@@ -454,6 +449,10 @@ article {
   gap: 50px;
 }
 
+article {
+  background-color: #576782;
+  border-radius: 1rem;
+}
 article h3 {
   font-family: andresValencia;
   color: #ddd;

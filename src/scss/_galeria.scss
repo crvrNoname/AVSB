@@ -1,9 +1,5 @@
 /*GALERIA CSS @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 
-article {
-  background-color: $primary-color;
-  border-radius: 1rem;
-}
 
 .contenedorFotos {
   width: fit-content;
@@ -15,6 +11,8 @@ article {
 }
 
 article {
+  background-color: $primary-color;
+  border-radius: 1rem;
   h3 {
     font-family: andresValencia;
     color: $border-color;
