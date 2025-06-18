@@ -101,6 +101,11 @@ main{
     background: linear-gradient(to bottom, $color-principal, $white);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 
+    a{
+        margin: 0 auto;
+        display: flex;
+    }
+
     &:hover {
         transform: translateY(-5px);
     }

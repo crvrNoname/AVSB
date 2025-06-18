@@ -15,16 +15,20 @@ article {
   border-radius: 1rem;
   h3 {
     font-family: andresValencia;
-    color: $border-color;
+    color: $primary-color;
     text-align: end;
     padding: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  background: linear-gradient(to right, $primary-color, $black);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   }
   h2 {
     /* add styling if needed */
   }
   > p {
     padding: 1rem;
-    color: $border-color;
+    color: $primary-color;
     text-align: center;
 
   }
