@@ -25,6 +25,27 @@ html body {
   position: relative;
   z-index: 0;
 }
+html body article {
+  width: 100%;
+  max-width: 55rem;
+  height: auto;
+  margin: 0 auto;
+  padding: 2vh;
+  display: inline-block;
+}
+html body article img {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  box-shadow: 15px 20px 40px #000000;
+  max-width: 300px;
+  width: 40%;
+  height: auto;
+  padding: 0px;
+  border-radius: 50px;
+  border: 2px solid #576782;
+  margin: 5px auto;
+  left: 2px;
+}
 
 body::before {
   content: "";
@@ -418,6 +439,161 @@ html {
   filter: brightness(0) invert(1);
 }
 
+/*GALERIA CSS @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+article {
+  background-color: #576782;
+  border-radius: 1rem;
+}
+
+.contenedorFotos {
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+article h3 {
+  font-family: andresValencia;
+  color: #ddd;
+  text-align: end;
+  padding: 1rem;
+}
+article h2 {
+  /* add styling if needed */
+}
+article > p {
+  padding: 1rem;
+  color: #ddd;
+  text-align: center;
+}
+
+.perfilPeluquero {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 1.5em;
+  box-shadow: 0px 0px 5px #000000;
+  background: #A0A4AC;
+  cursor: pointer;
+  overflow: hidden;
+  color: #ddd;
+  width: 100%;
+  max-width: 80%;
+  min-height: 4.5rem;
+  margin: 0 auto;
+}
+.perfilPeluquero:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.seccionPerfil {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 1vw;
+  justify-content: center;
+  align-items: center;
+}
+.seccionPerfil img {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  box-shadow: 15px 20px 40px #000000;
+  max-width: 300px;
+  width: 40%;
+  height: auto;
+  padding: 0px;
+  border-radius: 50px;
+  border: 2px solid #576782;
+  margin: 5px;
+  left: 2px;
+  display: inline-block;
+  justify-content: center;
+}
+
+.resenhaFoto {
+  flex: 3 1 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding: 1rem;
+  margin: 0 auto;
+  width: 90%;
+}
+.resenhaFoto > h2 {
+  font-size: clamp(1rem, 2vw, 1.3rem);
+  font-weight: 700;
+  margin-bottom: clamp(0.35rem, 2vw, 0.55rem);
+  font-family: andresValencia;
+}
+.resenhaFoto > p {
+  font-size: clamp(1rem, 1.75vw, 1.1rem);
+  font-weight: 400;
+  margin: 0.4rem 0;
+  font-family: salonDeBelleza;
+  width: fit-content;
+}
+.resenhaFoto a {
+  color: #ddd;
+}
+
+.atributos {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0.75rem 0px 1rem 0px;
+}
+
+.atributo {
+  border-radius: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.9375rem;
+  background: #576782;
+  transition: all 0.3s;
+  border: 1px solid #ddd;
+  font-weight: 500;
+}
+.atributo:hover {
+  color: var(--text);
+  text-decoration: underline;
+}
+
+.action-buttons {
+  border-top: 1px solid #ddd;
+  padding-top: 1rem;
+  gap: 0.75rem;
+  display: flex;
+  margin-top: auto;
+  flex-wrap: wrap;
+}
+.action-buttons a {
+  background: #ddd;
+  color: #000000;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  outline: none;
+  border: none;
+  font-size: 1.125rem;
+  display: flex;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  flex: 1 0 15rem;
+  max-width: 100%;
+}
+.action-buttons a:hover {
+  text-decoration: underline;
+}
+.action-buttons a.secondary {
+  background: inherit;
+  color: var(--text);
+  border: 1px solid var(--text);
+  flex: 1 0 5rem;
+}
+
 @media (min-width: 769px) {
   .floating-bar__item:hover {
     width: auto;
@@ -488,6 +664,9 @@ html {
   }
   footer {
     margin-bottom: 30px;
+  }
+  .seccionPerfil {
+    flex-direction: row;
   }
 }
 @media (min-width: 768px) {
