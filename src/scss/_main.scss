@@ -56,7 +56,7 @@ main{
    box-shadow: 7px 10px 20px $primary-color;
         border-radius:0.5rem;
     // ////////////////
-    padding: 4rem 2rem;
+    padding: 2rem 2rem;
     background: $white;
 
 
@@ -83,6 +83,39 @@ main{
   gap: 50px;
 }
 
+.bienvenida-card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    cursor: pointer;
+    overflow: hidden;
+    width: 100%;
+      max-width: 35rem;
+  min-height: 4.5rem;
+  margin: 3px auto;
+
+    border: 1px solid $primary-color;
+    border-radius: 8px;
+    // overflow: hidden;
+    transition: transform 0.3s;
+    // background: linear-gradient(to bottom, $color-principal, $white);
+    background: linear-gradient(
+  to bottom,
+  $color-principal 0%,   // Comienza al 0%
+  $color-principal 5%,  // Se mantiene hasta el 30%
+  $white 100%            // De ahí en adelante, se vuelve blanco
+);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+
+    a{
+        margin: 0 auto;
+        display: flex;
+    }
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+}
 .service-card {
     display: flex;
     flex-direction: column;
